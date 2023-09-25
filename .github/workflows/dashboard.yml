@@ -42,7 +42,7 @@ jobs:
           path: './dashboards'
   
   deploy:
-    if: github.ref == 'main'
+    if: ${{ needs.upload-artifact.result && github.ref == 'main' }}
     needs: upload-artifact
     environment:
       name: github-pages
