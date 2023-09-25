@@ -49,6 +49,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - run: echo "Current ref ${{ github.ref }}"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
