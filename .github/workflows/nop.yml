@@ -1,0 +1,9 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  nop:
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      run: exit
