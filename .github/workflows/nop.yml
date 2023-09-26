@@ -1,3 +1,4 @@
+name: NOP GHA Workflow
 on:
   workflow_dispatch:
 
@@ -6,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     permissions: {}
     steps:
-      run: exit
+      - run: exit
