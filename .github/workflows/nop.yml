@@ -1,4 +1,4 @@
-name: NOP GHA Workflow
+name: NOP GHA Workflow Test
 on:
   workflow_dispatch:
 
