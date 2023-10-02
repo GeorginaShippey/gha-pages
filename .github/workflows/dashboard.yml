@@ -41,8 +41,8 @@ jobs:
     runs-on: ubuntu-latest
     # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
     permissions:
-      pages: write
-      id-token: write
+#      pages: write
+#      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
